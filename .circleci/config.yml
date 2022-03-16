@@ -11,7 +11,7 @@ jobs:
 
       - checkout
 
-      - run: CalculatorTest
+      - run: src.test.java.CalculatorTest
 
       - store_test_results:
           path: /CalculatorTest/src/test/java/
