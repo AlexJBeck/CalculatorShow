@@ -11,9 +11,3 @@ jobs:
 
       - checkout
 
-
-      - store_test_results:
-          path: /CalculatorTest/src/test/java/
-
-      - store_artifacts:
-          path: /home/circleci/at.jku.se.prse.example.calculator/at.jku.se.prse.example.calculator/target/
