@@ -2,12 +2,19 @@ version: 2
 jobs:
   build:
 
-    working_directory: ~/src
+    working_directory: ~/Workspace
 
     docker:
-      - image: circleci/openjdk:11-stretch
+      - image: circleci/openjdk:11-browsers
 
     steps:
 
       - checkout
+      - run: mvn clean verify
+
+      - store_test_results:
+          path: /home/circleci/Workspace/Workspace/target/surefire-reports
+
+      - store_artifacts:
+          path: /home/circleci/Workspace/Workspace/target/
 
