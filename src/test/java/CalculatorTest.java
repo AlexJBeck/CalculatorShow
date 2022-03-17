@@ -25,4 +25,10 @@ public class CalculatorTest {
     void mult() {
         assertEquals(12,calculator.mult(3,4));
     }
+
+    @org.junit.jupiter.api.Test
+    void mult1() {
+        assertEquals(12,calculator.mult(3,4));
+    }
+
 }
