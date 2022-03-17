@@ -10,7 +10,7 @@ jobs:
     steps:
 
       - checkout
-      - run: mvn clean verify -x
+      - run: mvn clean verify
 
       - store_test_results:
           path: /home/circleci/Workspace/Workspace/target/surefire-reports
